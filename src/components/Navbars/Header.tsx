@@ -111,7 +111,7 @@ const Header = () => {
     <>
       <header className="flex flex-col w-full bg-white z-[100] fixed top-0 shadow-sm transition-all">
         {/* Desktop Header */}
-        <div className="hidden slg:flex items-center justify-between w-full py-4 max-w-[1440px] px-8 mx-auto">
+        <div className="hidden slg:flex items-center justify-between w-full py-4 max-w-[1440px] px-4 sm:px-8 mx-auto">
           {/* Left Logo */}
           <Link
             href="/"
@@ -257,10 +257,10 @@ const Header = () => {
         </div>
 
         {/* Accent line */}
-        <div className="hidden slg:block h-[3px] bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400" />
+        <div className="h-[3px] bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400" />
 
         {/* Mobile Header (Hidden on Laptop) */}
-        <div className="slg:hidden flex flex-col w-full p-4 gap-3 bg-black">
+        <div className="slg:hidden flex flex-col w-full px-3 py-3 gap-2.5 bg-black">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <FiMenu

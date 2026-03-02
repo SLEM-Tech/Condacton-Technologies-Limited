@@ -9,37 +9,26 @@ const footerLinks = [
   {
     title: "Company Info",
     links: [
-      { label: "About Us", href: "/about-us" },
-      { label: "Carrier", href: "#" },
-      { label: "We are hiring", href: "#" },
-      { label: "Blog", href: "/news" },
+      { label: "About Us", href: "/about" },
+      { label: "Products", href: "/category" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact Us", href: "/contact-us" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "About Us", href: "/about-us" },
-      { label: "Carrier", href: "#" },
-      { label: "We are hiring", href: "#" },
-      { label: "Blog", href: "/news" },
+      { label: "Terms of Use", href: "/terms-of-use" },
+      { label: "Privacy Policy", href: "/terms-of-use" },
     ],
   },
   {
-    title: "Features",
+    title: "Customer Service",
     links: [
-      { label: "Business Marketing", href: "#" },
-      { label: "User Analytic", href: "#" },
-      { label: "Live Chat", href: "#" },
-      { label: "Unlimited Support", href: "#" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "IOS & Android", href: "#" },
-      { label: "Watch a Demo", href: "#" },
-      { label: "Customers", href: "#" },
-      { label: "API", href: "#" },
+      { label: "My Account", href: "/user/dashboard" },
+      { label: "My Orders", href: "/user/my-orders" },
+      { label: "Cart", href: "/cart" },
+      { label: "Checkout", href: "/checkout" },
     ],
   },
 ];
@@ -67,7 +56,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#252B42] w-full pt-10 pb-6 font-[sans-serif]">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-8">
         {/* Top Section */}
         <div className="flex flex-col sm:flex-row items-center justify-between pb-10 border-b border-[#E6E6E6]/20">
           <Link
@@ -83,7 +72,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Columns */}
-        <div className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="py-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
           {footerLinks.map((section, index) => (
             <div key={index} className="flex flex-col gap-5">
               <h5 className="text-white font-bold text-base tracking-[0.1px]">
@@ -131,7 +120,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/80 text-sm font-semibold tracking-[0.2px] text-center md:text-left">
             Made With Love By Finland All Right Reserved
           </p>

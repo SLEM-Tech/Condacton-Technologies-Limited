@@ -81,7 +81,7 @@ const MainCategorySection = () => {
           )}
           {CategoryProducts?.length > 0 && (
             <div className="bg-white py-3 sm:px-7 w-full min-h-[400px]">
-              <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 sm:px-0">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2 xs:gap-3 sm:gap-5">
                 {CategoryProducts?.length > 0 &&
                   CategoryProducts?.map((product) => (
                     <ProductCard2
