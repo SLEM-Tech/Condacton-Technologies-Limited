@@ -9,7 +9,7 @@ interface AppLayoutProps {
 
 const AppLayout = ({ children, className }: AppLayoutProps) => {
   return (
-    <main className={`relative`}>
+    <main className={`relative overflow-hidden`}>
       <Header />
       <div className={`min-h-screen ${className}`}>{children}</div>
       <Footer />

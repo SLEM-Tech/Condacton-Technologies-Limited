@@ -105,7 +105,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3 text-white/80 group cursor-pointer hover:text-[#23A6F0] transition">
                 <FiMapPin className="text-xl text-[#23A6F0] shrink-0 mt-0.5" />
-                <span className="text-sm font-semibold tracking-[0.2px] w-48 leading-relaxed">
+                <span className="text-sm font-semibold tracking-[0.2px] flex-1 leading-relaxed">
                   4517 Washington Ave.
                 </span>
               </div>

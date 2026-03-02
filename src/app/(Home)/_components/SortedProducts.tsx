@@ -55,14 +55,14 @@ const SortedProducts = () => {
   return (
     <>
       {/* Bestseller Products Section */}
-      <div className="max-w-[1440px] px-8 mx-auto py-10 sm:py-16 font-[sans-serif]">
+      <div className="max-w-[1440px] px-4 sm:px-8 mx-auto py-10 sm:py-16 font-[sans-serif]">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 pb-6 border-b border-[#ECECEC]">
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-8 mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-[#252B42] tracking-[0.1px] uppercase">
               Bestseller Products
             </h2>
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
               <button className="text-sm font-bold text-[#23A6F0] tracking-[0.2px] hover:text-[#23A6F0]/80 transition">
                 All
               </button>

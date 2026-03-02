@@ -26,7 +26,7 @@ const page = () => {
   return (
     <AppLayout>
       <AllCategorySection />
-      <div className="mx-auto pl-2 mt-4">
+      <div className="mt-4">
         <SortedProducts />
       </div>
       {/* <MachineMaintenance /> */}
