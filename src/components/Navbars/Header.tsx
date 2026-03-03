@@ -112,12 +112,9 @@ const Header = () => {
       <header className="flex flex-col w-full bg-white z-[100] fixed top-0 shadow-sm transition-all">
         {/* Desktop Header */}
         <div className="hidden slg:flex items-center justify-between w-full py-4 max-w-[1440px] px-4 sm:px-8 mx-auto">
-          {/* Left Logo */}
-          <Link
-            href="/"
-            className="text-2xl font-bold tracking-[0.2em] text-[#252B42] uppercase">
-            LOGO
-          </Link>
+          <div className="w-[50px] h-[50px]">
+            <LogoImage />
+          </div>
 
           {/* Center Nav Links */}
           <nav className="flex items-center gap-6">
@@ -260,19 +257,21 @@ const Header = () => {
         <div className="h-[3px] bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400" />
 
         {/* Mobile Header (Hidden on Laptop) */}
-        <div className="slg:hidden flex flex-col w-full px-3 py-3 gap-2.5 bg-black">
+        <div className="slg:hidden flex flex-col w-full px-3 py-3 gap-2.5 bg-white border-b border-gray-100">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <FiMenu
-                className="text-2xl text-white"
+                className="text-2xl text-black cursor-pointer"
                 onClick={() => setDrawerVisible(true)}
               />
-              <LogoImage className="!w-[30px] brightness-200" />
+              <div className="w-[40px] h-[40px] ">
+                <LogoImage />
+              </div>
             </div>
-            <div onClick={onOpenCart} className="relative">
-              <FiShoppingBag className="text-2xl text-white" />
+            <div onClick={onOpenCart} className="relative cursor-pointer">
+              <FiShoppingBag className="text-2xl text-black" />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 size-4 bg-blue-600 rounded-full text-[9px] flex items-center justify-center text-white">
+                <span className="absolute -top-2 -right-2 size-4 bg-brand-blue rounded-full text-[9px] flex items-center justify-center text-white">
                   {totalItems}
                 </span>
               )}

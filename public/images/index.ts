@@ -17,7 +17,7 @@ import officeImg1 from "./office-img.png";
 import confetti from "./confetti.png";
 import banner from "./banner.png";
 import heroImage2 from "./heroImage2.png";
-import logoImage from "./tunGlobal-logo.png";
+import logoImage from "./condacton_app_logo.png";
 import heroImage3 from "./heroImage3.png";
 import heroImage4 from "./heroImage4.png";
 import heroBg from "./heroBg.png";
@@ -25,8 +25,10 @@ import machineImage from "./machine-image.png";
 import pinnacleImg from "./pinnacleImg.png";
 import mostPopularBg from "./hero-bg.png";
 import monitorImg from "./monitor screen.png";
+import condactonAppLogo from "./condacton_app_logo.png";
 
 export {
+  condactonAppLogo,
   monitorImg,
   mostPopularBg,
   pinnacleImg,

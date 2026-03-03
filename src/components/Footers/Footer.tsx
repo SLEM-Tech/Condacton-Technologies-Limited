@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi";
 import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
+import { LogoImage } from "@utils/function";
 
 const footerLinks = [
   {
@@ -61,8 +62,8 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between pb-10 border-b border-[#E6E6E6]/20">
           <Link
             href="/"
-            className="text-2xl font-bold tracking-[0.2em] text-white uppercase mb-4 sm:mb-0">
-            LOGO
+            className="mb-4 sm:mb-0 w-[50px] h-[50px] bg-white p-2 rounded-2xl">
+            <LogoImage />
           </Link>
           <Link
             href="/contact-us"
